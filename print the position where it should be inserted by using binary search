@@ -15,12 +15,7 @@ class Main {
        int r=arr.length-1;
        while (l<=r){
            int mid=l+(r-l)/2;
-           if(arr[mid]==x){
-               System.out.println(mid);
-               found=true;
-               break;
-           }
-           else if(arr[mid]>x){
+            if(arr[mid]>x){
                r=mid-1;
            }
            else{
