@@ -11,6 +11,12 @@ class Hello{
                 l=mid+1;
             }
         }
+        if(r<0){
+            return -1;
+        }
+        if(arr[r]!=target){
+            return -1;
+        }
         return r;
     }
     public static void main(String[] args){
